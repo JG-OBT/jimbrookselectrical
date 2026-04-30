@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-primary-50: #fdf2f2;
+  --color-primary-100: #fbe4e4;
+  --color-primary-200: #f7cdcd;
+  --color-primary-300: #f0a9a9;
+  --color-primary-400: #e27575;
+  --color-primary-500: #b91c1c;
+  --color-primary-600: #600b04;
+  --color-primary-700: #500903;
+  --color-primary-800: #3f0703;
+  --color-primary-900: #2d0502;
+  
+  --color-accent-50: #f0fdf4;
+  --color-accent-500: #22c55e;
+  --color-accent-600: #16a34a;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-900 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
